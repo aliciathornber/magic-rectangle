@@ -1,6 +1,6 @@
-# Rounded Corner Lock (Office.js PowerPoint Add-in)
+# Magic Rectangle (Office.js PowerPoint Add-in)
 
-An Office.js task pane add-in for **PowerPoint** that lets you type a corner radius in **pixels** (e.g., `16`) and keeps it **fixed after resize**. DPI is **auto-detected** from the current slide.
+An Office.js task pane add-in for **PowerPoint** that lets you type a corner radius in **pixels** (e.g., `16`) and keeps it **fixed after resize**.
 
 ## Quick start
 
