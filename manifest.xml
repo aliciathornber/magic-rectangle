@@ -1,46 +1,37 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="TaskPaneApp">
 
-  <!-- Required identity fields AS CHILD ELEMENTS, in correct order -->
-  <Id>7f7f6d3e-3c0a-4b1e-9e86-2c8f2d9f8a71</Id>
+  <!-- REQUIRED: child elements in the schema-defined order -->
+  <Id>7f7f6d3e-3c0a-4b1e-9e86-2c8f2d9f8a71</Id> <!-- replace with your GUID -->
   <Version>1.0.0.0</Version>
   <ProviderName>Rounded Corner Lock</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
-  <!-- Localized strings -->
   <DisplayName DefaultValue="Magic Rectangle"/>
   <Description DefaultValue="Keep rounded rectangle corner radius fixed (in px) after resize."/>
   <IconUrl DefaultValue="https://aliciathornber.github.io/magic-rectangle/assets/icon-32.png"/>
-  <!-- Optional: provide a 64px icon if you have it
+  <!-- Optional high-res icon:
   <HighResolutionIconUrl DefaultValue="https://aliciathornber.github.io/magic-rectangle/assets/icon-64.png"/>
   -->
   <SupportUrl DefaultValue="https://github.com/aliciathornber/magic-rectangle"/>
 
-  <!-- Declare domains used by the task pane BEFORE Requirements/Hosts -->
   <AppDomains>
     <AppDomain>https://aliciathornber.github.io</AppDomain>
     <AppDomain>https://appsforoffice.microsoft.com</AppDomain>
   </AppDomains>
 
-  <!-- Requirement set used by your code (adjust if needed) -->
-  <Requirements>
-    <Sets>
-      <Set Name="PowerPointApi" MinVersion="1.10"/>
-    </Sets>
-  </Requirements>
-
-  <!-- PowerPoint host name for XML manifests is 'Presentation' -->
+  <!-- PowerPoint host name: Presentation -->
   <Hosts>
     <Host Name="Presentation"/>
   </Hosts>
 
-  <!-- HTTPS SourceLocation with DefaultValue -->
   <DefaultSettings>
     <SourceLocation DefaultValue="https://aliciathornber.github.io/magic-rectangle/taskpane/taskpane.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
+
+  <!-- No VersionOverrides block needed unless you’re adding ribbon commands -->
 </OfficeApp>
