@@ -5,16 +5,14 @@
 
   <!-- REQUIRED: child elements in the schema-defined order -->
   <Id>7f7f6d3e-3c0a-4b1e-9e86-2c8f2d9f8a71</Id> <!-- replace with your GUID -->
-  <Version>1.0.0.2</Version>
+  <Version>1.0.0.3</Version>
   <ProviderName>Magic Rectangle</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
   <DisplayName DefaultValue="Magic Rectangle"/>
   <Description DefaultValue="Apply consistent sizing to rounded rectangle corners all at once."/>
   <IconUrl DefaultValue="https://aliciathornber.github.io/magic-rectangle/assets/icon-32.png"/>
-  <!-- Optional high-res icon:
-  <HighResolutionIconUrl DefaultValue="https://aliciathornber.github.io/magic-rectangle/assets/icon-64.png"/>
-  -->
+  <HighResolutionIconUrl DefaultValue="https://aliciathornber.github.io/magic-rectangle/assets/icon-80.png"/>
   <SupportUrl DefaultValue="https://github.com/aliciathornber/magic-rectangle"/>
 
   <AppDomains>
