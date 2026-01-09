@@ -5,7 +5,7 @@
 
   <!-- REQUIRED: child elements in the schema-defined order -->
   <Id>7f7f6d3e-3c0a-4b1e-9e86-2c8f2d9f8a71</Id> <!-- replace with your GUID -->
-  <Version>1.0.0.3</Version>
+  <Version>1.0.0.4</Version>
   <ProviderName>Magic Rectangle</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
@@ -33,3 +33,5 @@
 
   <!-- No VersionOverrides block needed unless you’re adding ribbon commands -->
 </OfficeApp>
+
+
