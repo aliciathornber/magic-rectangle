@@ -6,9 +6,9 @@
            Version="1.0.0.0"
            ProviderName="Rounded Corner Lock"
            DefaultLocale="en-US"
-           DisplayName="Rounded Corner Lock"
+           DisplayName="Magic Rectangle"
            Description="Set a rounded rectangle corner radius in px and keep it fixed after resize."
-           SupportUrl="https://github.com/<your-username>/rounded-corner-lock">
+           SupportUrl="https://github.com/aliciathornber/magic-rectangle">
   <Hosts>
     <Host Name="PowerPoint"/>
   </Hosts>
@@ -18,8 +18,8 @@
     </Sets>
   </Requirements>
   <DefaultSettings>
-    <SourceLocation Default="https://<your-username>.github.io/rounded-corner-lock/taskpane/taskpane.html"/>
+    <SourceLocation Default="https://aliciathornber.github.io/magic-rectangle/taskpane/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
-  <IconUrl Default="https://<your-username>.github.io/rounded-corner-lock/assets/icon-32.png"/>
+  <IconUrl Default="https://aliciathornber.github.io/magic-rectangle/assets/icon-32.png"/>
 </OfficeApp>
