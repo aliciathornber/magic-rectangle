@@ -9,17 +9,26 @@
   </head>
   <body>
     <div class="container">
-      <h3>Magic Rectangle</h3>
-	<h4>Make your corners consistent in one click!</h4>
+      <h3>Magic Rectangle - make your corners consistent in one click!</h3>
       <div class="row">
         <label for="radiusPx">Radius (px)</label>
         <input id="radiusPx" type="number" min="1" value="16"/>
       </div>
       <div class="row">
         <button id="applyToSelection">Apply to selected shapes</button>
-              </div>
-           <div class="note">
+        <label class="inline">
+          <input id="lockToggle" type="checkbox"/>
+          Lock radius after resize
+        </label>
+      </div>
+      <div class="subtle">
+        <strong>DPI (auto):</strong>
+        <span id="dpiValue">–</span>
+        <button id="reDetectDpi" title="Re-detect DPI from current slide">Re-detect</button>
+      </div>
+      <div class="note">
         Select one or more <em>rounded rectangles</em>, enter px and click Apply.
+        When Lock is on, the corner radius stays constant as you resize.
       </div>
     </div>
   </body>
