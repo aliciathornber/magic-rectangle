@@ -97,18 +97,15 @@ function enableLock(enabled) {
   }
 }
 
-
-/* global Office */
-Office.onReady(info => {
-  if (info.host !== Office.HostType.PowerPoint) return;
-
-  // Expose command functions if you have ribbon commands:
-  window.openPane = async (evt) => {
-    await Office.addin.showAsTaskpane();
-    if (evt && evt.completed) evt.completed();
+Office.onReady(async () => {
+  try { await detectDpiFromActiveSlide(); } catch {}
+  document.getElementById("reDetectDpi").onclick = detectDpiFromActiveSlide;
+  const pxInput = document.getElementById("radiusPx");
+  document.getElementById("applyToSelection").onclick = async () => {
+    const px = Number(pxInput.value) || 16;
+    const dpi = detectedDpi || 96;
+    await applyFixedRadiusToSelection(px, dpi);
   };
-
-  // Gate higher sets
-  const hasPpt110 = Office.context.requirements.isSetSupported('PowerPointApi', '1.10');
-  // ... feature-switch here
+  const lockToggle = document.getElementById("lockToggle");
+  lockToggle.onchange = () => enableLock(lockToggle.checked);
 });
